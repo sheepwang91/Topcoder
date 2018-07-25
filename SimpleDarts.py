@@ -8,7 +8,7 @@ class SimpleDarts:
         else:
             rd = 50 + F*3 +(F-1) * 3
         return rd
-class SimpleDarts2:
+class SimpleDarts2: # solution from Topcoder, good idea by creating an arry which include all score, then sort it.
     def higestScrore(self, F):
         arr = [i for i in range(1, F+1)] + [2 * i for i in range(1, F + 1)] + [3 * i for i in range(1, F+1)]
         arr.append(25)
